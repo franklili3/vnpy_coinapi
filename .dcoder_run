@@ -1,0 +1,9 @@
+# write commands to install modules/lib and run your project, one in each line.
+# python3, pip and poetry commands are available along with other basic linux commands.
+# command to run project, replace ${FILE_NAME} with your main file
+# poetry run python3 -u ${FILE_NAME}
+poetry run git config --global user.email "348104201@qq.com"
+poetry run git config --global user.name "franklili"
+poetry run git add .
+poetry run git commit -m add_download_save_data
+poetry run git push
