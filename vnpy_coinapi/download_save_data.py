@@ -17,7 +17,7 @@ param = {"filter_symbol_id": ['DERIBIT_OPT_BTC_USD_1603', 'DERIBIT_OPT_BTC_USD_1
                                 'DERIBIT_OPT_BTC_USD_1803', 'DERIBIT_OPT_BTC_USD_1806', 'DERIBIT_OPT_BTC_USD_1809', 'DERIBIT_OPT_BTC_USD_1812',
                                 'DERIBIT_OPT_BTC_USD_1903', 'DERIBIT_OPT_BTC_USD_1906', 'DERIBIT_OPT_BTC_USD_1909', 'DERIBIT_OPT_BTC_USD_1912',
                                 'DERIBIT_OPT_BTC_USD_2003', 'DERIBIT_OPT_BTC_USD_2006', 'DERIBIT_OPT_BTC_USD_2009', 'DERIBIT_OPT_BTC_USD_2012',
-                                'DERIBIT_OPT_BTC_USD_2103', 'DERIBIT_OPT_BTC_USD_2106', 'DERIBIT_OPT_BTC_USD_2109'
+                                'DERIBIT_OPT_BTC_USD_2103', 'DERIBIT_OPT_BTC_USD_2106', 'DERIBIT_OPT_BTC_USD_2109', 'DERIBIT_PERP_BTC_USD'
                                 ]}
 symbols = api.metadata_list_symbols(param)
 
