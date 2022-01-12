@@ -29,6 +29,8 @@ datafeed = CoinapiDatafeed()
 database = get_database()
 
 # 下载历史数据
+contracts_list = []
+contract_dict = {}
 for symbol_dict in symbols:
 
     # 构建请求结构体
@@ -41,8 +43,11 @@ for symbol_dict in symbols:
         )
 
     # 获取k线历史数据
-    bar_data = datafeed.query_bar_history(bar_req)
+    bars_data = datafeed.query_bar_history(bar_req)
 
     # 将k线数据存入数据库
-    database.save_bar_data(bar_data)
-    print('symbol_id: ', symbol_dict['symbol_id'], ' count: ', len(bar_data))
+    database.save_bar_data(bars_data)
+    print('symbol_id: ', symbol_dict['symbol_id'], ' count: ', len(bars_data))
+
+    # 构建合约数据
+    contract_dict['symbol'] = 
