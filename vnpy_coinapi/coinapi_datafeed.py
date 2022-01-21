@@ -42,12 +42,12 @@ class CoinapiDatafeed(BaseDatafeed):
         start = req.start
         end = req.end
 
-        symbol_id = to_ca_symbol(symbol, exchange)
+        #symbol_id = to_ca_symbol(symbol, exchange)
         period_id = INTERVAL_VT2CA[interval]
         time_start = datetime.strftime(start, "%Y-%m-%dT%H:%M:%S")
         time_end = datetime.strftime(end, "%Y-%m-%dT%H:%M:%S")
 
-        url = COINAPI_HOST + f"/v1/ohlcv/{symbol_id}/history?"
+        url = COINAPI_HOST + f"/v1/ohlcv/{symbol}/history?"
         params = {
             "period_id": period_id,
             "time_start": time_start,
