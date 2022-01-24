@@ -51,7 +51,8 @@ class CoinapiDatafeed(BaseDatafeed):
         params = {
             "period_id": period_id,
             "time_start": time_start,
-            "time_end": time_end
+            "time_end": time_end,
+            "limit": 4000
         }
         headers = {'X-CoinAPI-Key': self.password}
 
